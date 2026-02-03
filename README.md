@@ -60,7 +60,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'log_monitor_system',
         'USER': 'root',  # 替换为你的 MySQL 用户名
-        'PASSWORD': '',  # 替换为你的 MySQL 密码
+        'PASSWORD': 'root',  # 替换为你的 MySQL 密码
         'HOST': 'localhost',
         'PORT': '3306',
     }
@@ -79,6 +79,7 @@ python manage.py migrate
 ### 4. 启动 Redis 服务
 
 确保 Redis 服务已启动，默认端口为 6379。
+这里我本地用了 redis://localhost:6379/1
 
 ## 数据库表结构
 
